@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Node.js Course</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </nav>
+  <article>
+    <div class="info">
+      <span>
+        <%= post.author %>
+      </span>
+      <span>
+        <%= post.updatedAt.toLocaleDateString() %>
+      </span>
+    </div>
+    <h1>
+      <%= post.name %>
+    </h1>
+    <p>
+      <%= post.body %>
+    </p>
+  </article>
+</body>
+
+</html>
